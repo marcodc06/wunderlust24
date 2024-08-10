@@ -258,3 +258,140 @@ footer a {
         text-align: center; 
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    header {
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    h1 {
+        font-size: 1.8em; 
+    }
+
+    p {
+        font-size: 1em; 
+    }
+
+    
+    #menu-toggle {
+        display: block; 
+    }
+
+    nav ul {
+        display: flex; 
+        justify-content: center; 
+    }
+
+    nav li {
+        margin: 0 10px; 
+    }
+
+    nav a {
+        padding: 10px 15px; 
+    }
+
+    #menu-toggle label {
+        display: none; 
+    }
+
+    #img-grid {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+    }
+
+    #img-grid img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+
+    #plan {
+        background-color: #F6D64A; 
+        padding: 20px;
+    }
+
+    #plan div {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    #plan section {
+        flex: 1 1 200px; 
+        text-align: center; 
+    }
+
+    #plan a img {
+        max-width: 100%; 
+    }
+
+    #testimonials div {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+
+    #testimonials section {
+        flex: 1 1 200px; 
+        text-align: center; 
+    }
+
+    #testimonials img {
+        width: 100px; 
+        height: auto; 
+        border-radius: 50%; 
+    }
+
+    #about {
+        background-color: #499BD2; 
+        color: #FFFFFF; 
+        padding: 20px;
+    }
+
+    #about div {
+        display: flex;
+        flex-wrap: wrap; 
+
+    }
+
+    #about section {
+        flex: 1 1 200px;
+        text-align: center; 
+    }
+
+    #about img {
+        width: 40px; 
+        height: auto;
+    }
+
+    form {
+        padding: 20px;
+        border: 1px solid #9B26B0; 
+        border-radius: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1em; 
+    }
+
+    footer {
+        padding: 20px;
+        background-color: #EAEAEA; 
+        text-align: center; 
+    }
+
+
+    
+}
