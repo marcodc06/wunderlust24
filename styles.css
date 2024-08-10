@@ -1,3 +1,4 @@
+/* Marco Cossio*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -45,4 +46,134 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Molle', serif;
+    color: #000000;
+}
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+p, q, small, nav, button, form {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    background-color: #FFFFFF; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+header h1 {
+    margin: 10px 0;
+}
+
+
+nav {
+    background-color: #F6D64A; 
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+nav ul li a {
+    color: #000000; 
+    text-decoration: none;
+}
+
+
+#main-content {
+    padding: 10px;
+}
+
+
+#plan {
+    background-color: #F6D64A; 
+    padding: 10px;
+}
+#plan section {
+    background-color: #55BCD5; 
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#plan img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#about {
+    background-color: #499BD2; 
+    color: #FFFFFF; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about section {
+    margin: 10px 0;
+}
+
+
+#contact {
+    padding: 10px;
+}
+#contact form {
+    background-color: #9B26B0; 
+    color: #222222; 
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#contact .custom-select select {
+    background-color: #9B26B0; 
+    color: #FFFFFF; 
+}
+#contact input[type="submit"] {
+    background-color: #9B26B0; 
+    color: #FFFFFF; 
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #EAEAEA;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #000000;
+    text-decoration: none;
 }
