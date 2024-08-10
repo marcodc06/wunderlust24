@@ -89,6 +89,48 @@ header h1 {
 nav {
     background-color: #F6D64A; 
 }
+
+#menu-toggle {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+#menu-toggle label {
+    background-color: #F6D64A; 
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu-toggle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+#menu-toggle li {
+    margin: 0 15px; 
+}
+
+#menu-toggle a {
+    color: #000000; 
+    background-color: #FFFFFF; 
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    padding: 10px; 
+    display: block; 
+    border-radius: 5px; 
+}
+
+
+#menu-toggle .active a {
+    color: #F6D64A; 
+    background-color: #FFFFFF; 
+}
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -141,12 +183,21 @@ nav ul li a {
     margin: 10px 0;
 }
 
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:checked + label + nav {
+    left: 0;
+    transition: 0.3s;
+}
 
 #contact {
-    padding: 10px;
+    padding: 20px;
+    background-color: #FFFFFF; 
 }
 #contact form {
-    background-color: #9B26B0; 
+    background-color: #FFFFFF; 
     color: #222222; 
     padding: 20px;
     border-radius: 5px;
@@ -176,4 +227,34 @@ footer {
 footer a {
     color: #000000;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block; 
+    }
+
+    #menu-toggle label {
+        display: block; 
+    }
+
+    #menu-toggle ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #FFFFFF; 
+    }
+
+    #menu-toggle input:checked + label + ul {
+        display: flex; 
+    }
+
+    #menu-toggle li {
+        margin: 0; 
+    }
+
+    #menu-toggle a {
+        padding: 15px; 
+        text-align: center; 
+    }
 }
